@@ -1,0 +1,111 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+body {
+  background: #F2F2F2;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 15px;
+}
+
+/* ⭐ TOP CONTROL BAR */
+.top-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Dropdown */
+.ctrl-select {
+  height: 32px;
+  border: 1px solid #D9D9D9;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 14px;
+  outline: none;
+  background: #fff;
+  cursor: pointer;
+}
+
+/* Keyword Input */
+.ctrl-input {
+  width: 180px;
+  height: 32px;
+  border: 1px solid #D9D9D9;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 13px;
+  outline: none;
+}
+
+
+/* Search Button */
+.ctrl-btn {
+  height: 32px;
+  background: #00A66E;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0 25px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.ctrl-btn:hover {
+  background: #00875C;
+}
+
+/* 📌 LARGE CONTENT BOX */
+.main-box {
+  margin: 12px 20px 0 20px;
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;  /* subtle border */
+  border-radius: 6px;
+  height: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-box span {
+  font-size: 12px;
+  color: #777;
+}
+
+/* 📄 FLOATING SMALL CARD */
+.floating-card {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 180px;
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 12px;
+  color: #444;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .top-controls {
+      flex-direction: column;
+      align-items: stretch;
+  }
+
+  .ctrl-btn {
+      width: 100%;
+  }
+
+  .floating-card {
+      width: 150px;
+      right: 10px;
+      bottom: 10px;
+  }
+}
